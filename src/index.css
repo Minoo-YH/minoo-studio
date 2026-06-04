@@ -27,10 +27,26 @@ body {
   color: var(--ink);
   font-family: Inter, system-ui, sans-serif;
   background:
-    radial-gradient(circle at 12% 18%, rgba(255, 191, 163, 0.55), transparent 22%),
-    radial-gradient(circle at 88% 14%, rgba(205, 183, 255, 0.5), transparent 20%),
-    radial-gradient(circle at 18% 82%, rgba(168, 199, 160, 0.45), transparent 18%),
-    radial-gradient(circle at 78% 78%, rgba(255, 217, 106, 0.35), transparent 16%),
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(255, 191, 163, 0.55),
+      transparent 22%
+    ),
+    radial-gradient(
+      circle at 88% 14%,
+      rgba(205, 183, 255, 0.5),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 18% 82%,
+      rgba(168, 199, 160, 0.45),
+      transparent 18%
+    ),
+    radial-gradient(
+      circle at 78% 78%,
+      rgba(255, 217, 106, 0.35),
+      transparent 16%
+    ),
     var(--bg);
 }
 
@@ -64,13 +80,9 @@ a {
 }
 
 .soft-button {
-  background: linear-gradient(
-    135deg,
-    var(--peach),
-    var(--butter),
-    var(--lavender)
-  );
-  box-shadow: 0 14px 35px rgba(255, 138, 138, 0.22);
+  background: linear-gradient(135deg, #ffcab3, #ffc8dc, #d8c4ff);
+
+  box-shadow: 0 14px 35px rgba(216, 196, 255, 0.25);
 }
 
 .section-label {
