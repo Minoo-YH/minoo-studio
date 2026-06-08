@@ -2,6 +2,15 @@ import helpc from "../assets/helpc.png";
 
 const projects = [
   {
+    title: "LuxeScents",
+    type: "Luxury Perfume Website",
+    description:
+      "A modern perfume brand website focused on elegant design, storytelling and premium user experience.",
+    tags: ["React", "Branding", "UI Design"],
+    repoUrl: "https://github.com/Minoo-YH/luxescents-perfume-site",
+    color: "bg-rose-100",
+  },
+  {
     title: "Help App",
     image: helpc,
     type: "React + Figma Project",
@@ -14,23 +23,22 @@ const projects = [
       "https://www.figma.com/make/qMKm053W5kn1JNJOwQ51h0/Help-App?t=hXBCaRWimu2RI1rC-1",
     color: "bg-purple-100",
   },
-
   {
-    title: "Nordic Café QR Page",
-    type: "Concept Project",
+    title: "Travel Site",
+    type: "Travel Website",
     description:
-      "A QR menu page concept for a café with menu, opening hours and social links.",
-    tags: ["QR Page", "Landing Page", "Small Business"],
-    color: "bg-orange-100",
+      "A modern travel website focused on destination discovery, layout design and responsive user experience.",
+    tags: ["React", "Responsive", "Travel"],
+    repoUrl: "https://github.com/oliviaskye/travel-site",
+    color: "bg-sky-100",
   },
-
   {
-    title: "Luna Beauty Website",
-    type: "Concept Project",
+    title: "QR Business Page",
+    type: "QR Page Design",
     description:
-      "A modern beauty studio website concept with booking and service sections.",
-    tags: ["Website Design", "WordPress", "Booking"],
-    color: "bg-pink-100",
+      "A mobile-friendly QR landing page concept for menus, services, contact links and quick business information.",
+    tags: ["QR Page", "Mobile First", "Small Business"],
+    color: "bg-orange-100",
   },
 ];
 
@@ -39,20 +47,20 @@ const Projects = () => {
     <section id="work" className="max-w-7xl mx-auto px-6 py-24">
       <div className="text-center mb-16">
         <p className="section-label mb-4 text-sm font-semibold">
-          SELECTED WORK
+          SELECTED PROJECTS
         </p>
 
         <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
-          Recent work & concepts.
+          Websites, apps & QR pages.
         </h2>
 
         <p className="max-w-3xl mx-auto mt-6 text-lg text-gray-600">
-          A mix of real React projects and website concepts created for
-          freelancers and small businesses.
+          A selection of real projects and service concepts created for modern
+          brands, freelancers and small businesses.
         </p>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {projects.map((project) => (
           <article
             key={project.title}
@@ -63,11 +71,11 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-56 w-full object-cover transition duration-300 hover:scale-105"
+                  className="h-52 w-full object-cover transition duration-300 hover:scale-105"
                 />
               ) : (
                 <div
-                  className={`flex h-56 items-center justify-center ${project.color}`}
+                  className={`flex h-52 items-center justify-center ${project.color}`}
                 >
                   <span className="text-6xl">✦</span>
                 </div>
