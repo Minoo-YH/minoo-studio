@@ -1,8 +1,11 @@
 import helpc from "../assets/helpc.png";
+import luxuryweb from "../assets/luxuryweb.png";
+import travel from "../assets/travel.png";
 
 const projects = [
   {
     title: "LuxeScents",
+    image: luxuryweb,
     type: "Luxury Perfume Website",
     description:
       "A modern perfume brand website focused on elegant design, storytelling and premium user experience.",
@@ -10,6 +13,7 @@ const projects = [
     repoUrl: "https://github.com/Minoo-YH/luxescents-perfume-site",
     color: "bg-rose-100",
   },
+
   {
     title: "Help App",
     image: helpc,
@@ -23,21 +27,24 @@ const projects = [
       "https://www.figma.com/make/qMKm053W5kn1JNJOwQ51h0/Help-App?t=hXBCaRWimu2RI1rC-1",
     color: "bg-purple-100",
   },
+
   {
     title: "Travel Site",
+    image: travel,
     type: "Travel Website",
     description:
-      "A modern travel website focused on destination discovery, layout design and responsive user experience.",
+      "A modern travel website focused on destination discovery, responsive design and user experience.",
     tags: ["React", "Responsive", "Travel"],
     repoUrl: "https://github.com/oliviaskye/travel-site",
     color: "bg-sky-100",
   },
+
   {
     title: "QR Business Page",
-    type: "QR Page Design",
+    type: "QR Landing Page",
     description:
-      "A mobile-friendly QR landing page concept for menus, services, contact links and quick business information.",
-    tags: ["QR Page", "Mobile First", "Small Business"],
+      "A mobile-first landing page connected to a QR code for menus, events, services and business information.",
+    tags: ["QR Code", "Mobile First", "Business"],
     color: "bg-orange-100",
   },
 ];
@@ -45,7 +52,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="work" className="max-w-7xl mx-auto px-6 py-24">
-      <div className="text-center mb-16">
+      <div className="mb-16 text-center">
         <p className="section-label mb-4 text-sm font-semibold">
           SELECTED PROJECTS
         </p>
@@ -55,8 +62,8 @@ const Projects = () => {
         </h2>
 
         <p className="max-w-3xl mx-auto mt-6 text-lg text-gray-600">
-          A selection of real projects and service concepts created for modern
-          brands, freelancers and small businesses.
+          Real websites, digital products and QR page concepts created for
+          modern businesses.
         </p>
       </div>
 
@@ -90,7 +97,7 @@ const Projects = () => {
               {project.title}
             </h3>
 
-            <p className="mb-5 leading-relaxed text-gray-600">
+            <p className="mb-5 min-h-[96px] leading-relaxed text-gray-600">
               {project.description}
             </p>
 
@@ -105,7 +112,7 @@ const Projects = () => {
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="mt-auto flex flex-wrap gap-3">
               {project.liveUrl && (
                 <a
                   href={project.liveUrl}
