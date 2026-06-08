@@ -6,6 +6,8 @@ import HowItWorks from "../components/HowItWorks";
 import Pricing from "../components/Pricing";
 import Contact from "../components/Contact";
 import Faq from "../components/Faq";
+import Footer from "../components/Footer";
+
 
 const Home = () => {
   return (
@@ -18,6 +20,7 @@ const Home = () => {
       <Pricing />
       <Contact />
       <Faq />
+      <Footer />
     </>
   );
 };
