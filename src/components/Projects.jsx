@@ -10,8 +10,18 @@ const projects = [
     description:
       "A modern perfume brand website focused on elegant design, storytelling and premium user experience.",
     tags: ["React", "Branding", "UI Design"],
-    repoUrl: "https://github.com/Minoo-YH/luxescents-perfume-site",
     color: "bg-rose-100",
+  },
+
+  {
+    title: "Travel Site",
+    image: travel,
+    type: "Travel Website",
+    description:
+      "A modern travel website focused on destination discovery, responsive design and user experience.",
+    tags: ["React", "Responsive", "Travel"],
+    repoUrl: "https://github.com/oliviaskye/travel-site",
+    color: "bg-sky-100",
   },
 
   {
@@ -26,17 +36,6 @@ const projects = [
     figmaUrl:
       "https://www.figma.com/make/qMKm053W5kn1JNJOwQ51h0/Help-App?t=hXBCaRWimu2RI1rC-1",
     color: "bg-purple-100",
-  },
-
-  {
-    title: "Travel Site",
-    image: travel,
-    type: "Travel Website",
-    description:
-      "A modern travel website focused on destination discovery, responsive design and user experience.",
-    tags: ["React", "Responsive", "Travel"],
-    repoUrl: "https://github.com/oliviaskye/travel-site",
-    color: "bg-sky-100",
   },
 
   {
@@ -71,20 +70,25 @@ const Projects = () => {
         {projects.map((project) => (
           <article
             key={project.title}
-            className="art-card overflow-hidden rounded-[32px] p-5"
+            className="art-card flex flex-col overflow-hidden rounded-[32px] p-5"
           >
             <div className="mb-6 overflow-hidden rounded-[24px]">
               {project.image ? (
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-52 w-full object-cover transition duration-300 hover:scale-105"
+                  className="h-64 w-full object-cover transition duration-300 hover:scale-105"
                 />
               ) : (
                 <div
-                  className={`flex h-52 items-center justify-center ${project.color}`}
+                  className={`flex h-64 items-center justify-center ${project.color}`}
                 >
-                  <span className="text-6xl">✦</span>
+                  <div className="text-center">
+                    <div className="mb-3 text-6xl">📱</div>
+                    <p className="font-semibold text-gray-900">
+                      QR Landing Page
+                    </p>
+                  </div>
                 </div>
               )}
             </div>
@@ -97,7 +101,7 @@ const Projects = () => {
               {project.title}
             </h3>
 
-            <p className="mb-5 min-h-[96px] leading-relaxed text-gray-600">
+            <p className="mb-5 min-h-[140px] leading-relaxed text-gray-600">
               {project.description}
             </p>
 
