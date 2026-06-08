@@ -10,9 +10,9 @@ const projects = [
     description:
       "A modern perfume brand website focused on elegant design, storytelling and premium user experience.",
     tags: ["React", "Branding", "UI Design"],
+    repoUrl: "https://github.com/Minoo-YH/luxescents-perfume-site",
     color: "bg-rose-100",
   },
-
   {
     title: "Travel Site",
     image: travel,
