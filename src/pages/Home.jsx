@@ -5,6 +5,7 @@ import Projects from "../components/Projects";
 import HowItWorks from "../components/HowItWorks";
 import Pricing from "../components/Pricing";
 import Contact from "../components/Contact";
+import Faq from "../components/Faq";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <HowItWorks />
       <Pricing />
       <Contact />
+      <Faq />
     </>
   );
 };
