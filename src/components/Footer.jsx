@@ -1,29 +1,35 @@
 const Footer = () => {
   return (
-    <footer className="max-w-6xl mx-auto px-6 py-10">
-      <div className="art-card rounded-[32px] p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-        <div>
-          <h2 className="text-2xl font-bold text-gray-900">
-            Minoo Studio
-          </h2>
-          <p className="mt-2 text-gray-600">
-            Fast websites, landing pages and QR pages.
-          </p>
-        </div>
+    <footer className="max-w-7xl mx-auto px-6 py-16">
+      <div className="border-t border-black/5 pt-8">
+        <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900">minoo ✦ studio</h2>
 
-        <div className="flex flex-wrap justify-center gap-4 text-gray-700">
-          <a href="#services">Services</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#contact">Contact</a>
-          <a href="mailto:minoo.yaghoubi@gmail.com">
-            Email
+            <p className="mt-2 max-w-sm text-gray-500">
+              Fast websites, landing pages and QR pages for modern businesses.
+            </p>
+          </div>
+
+          <a href="#pricing" className="hover:text-gray-900">
+            Pricing
+          </a>
+
+          <a href="#work" className="hover:text-gray-900">
+            Projects
+          </a>
+
+          <a href="#contact" className="hover:text-gray-900">
+            Contact
           </a>
         </div>
       </div>
 
-      <p className="py-6 text-center text-sm text-gray-500">
-        © 2025 Minoo Studio. Built with love in Finland.
-      </p>
+      <div className="mt-10 flex flex-col gap-2 border-t border-black/5 pt-6 text-sm text-gray-400 md:flex-row md:items-center md:justify-between">
+        <p>© 2025 Minoo Studio</p>
+
+        <p>Designed & built in Finland 🇫🇮</p>
+      </div>
     </footer>
   );
 };
