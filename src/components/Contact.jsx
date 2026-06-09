@@ -15,7 +15,6 @@ const Contact = () => {
           </p>
 
           <div className="mt-8 space-y-3 text-gray-700">
-            <p>📧 minoo.yaghoubi@gmail.com</p>
             <p>📍 Based in Finland</p>
           </div>
         </div>
